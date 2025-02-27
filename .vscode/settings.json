@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "sstream": "cpp"
+    },
+    "marscode.codeCompletionPro": {
+        "enableCodeCompletionPro": false
+    },
+    "marscode.enableInlineCommand": true
+}
