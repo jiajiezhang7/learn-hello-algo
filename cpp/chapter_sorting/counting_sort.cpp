@@ -44,6 +44,7 @@ void countingSort(vector<int> &nums) {
         counter[num]++;
     }
     // 3. 求 counter 的前缀和，将“出现次数”转换为“尾索引”
+    // 也即前缀和告诉我们 - 每个数字在排序后数组中的结束位置
     // 即 counter[num]-1 是 num 在 res 中最后一次出现的索引
     for (int i = 0; i < m; i++) {
         counter[i + 1] += counter[i];

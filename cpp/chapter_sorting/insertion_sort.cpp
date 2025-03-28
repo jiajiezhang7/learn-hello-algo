@@ -10,6 +10,7 @@
 void insertionSort(vector<int> &nums) {
     // 外循环：已排序区间为 [0, i-1]
     for (int i = 1; i < nums.size(); i++) {
+        // base是待排序的元素，需要把它插入到正确的位置
         int base = nums[i], j = i - 1;
         // 内循环：将 base 插入到已排序区间 [0, i-1] 中的正确位置
         while (j >= 0 && nums[j] > base) {
